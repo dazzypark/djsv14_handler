@@ -1,5 +1,7 @@
+const { Events } = require("discord.js");
+
 module.exports = {
-  name: "ready",
+  name: Events.ClientReady,
   /**
    *
    * @param {import("discord.js").Client} client

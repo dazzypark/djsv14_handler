@@ -1,8 +1,8 @@
-const { ChannelType } = require("discord.js");
+const { ChannelType, Events } = require("discord.js");
 const client = require("../index");
 
 module.exports = {
-  name: "interactionCreate",
+  name: Events.InteractionCreate,
   /**
    *
    * @param {import("discord.js").Interaction} interaction
@@ -10,7 +10,7 @@ module.exports = {
   async execute(interaction) {
     if (
       !interaction.isButton() &&
-      !interaction.isSelectMenu() &&
+      !interaction.isAnySelectMenu() &&
       !interaction.isModalSubmit()
     )
       return;

@@ -1,11 +1,11 @@
-const { ChannelType } = require("discord.js");
+const { ChannelType, Events } = require("discord.js");
 const client = require("../index");
 //커맨드 파일에서...
 //ephemral:true "비공개 메세지로 deferReply"
 //dfr:true "deferReply 안함"
 
 module.exports = {
-  name: "interactionCreate",
+  name: Events.InteractionCreate,
   /**
    *
    * @param {import("discord.js").Interaction} interaction
