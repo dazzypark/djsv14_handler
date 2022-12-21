@@ -1,6 +1,6 @@
 # djsv14_handler
 
-**DISCORD JS 14 핸들러 by ! 대찌#4559**
+**Discord Js 14 Handler By ! 대찌#4559**
 
 ```
 1. git clone https://github.com/junseojjang/djsv14_handler.git
