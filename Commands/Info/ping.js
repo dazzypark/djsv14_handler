@@ -1,11 +1,14 @@
-const { CommandInteraction, SlashCommandBuilder } = require("discord.js");
+const {
+  ChatInputCommandInteraction,
+  SlashCommandBuilder,
+} = require("discord.js");
 module.exports = {
   data: new SlashCommandBuilder()
     .setName("핑")
     .setDescription("봇의 핑을 확인합니다"),
   /**
    *
-   * @param {CommandInteraction} interaction
+   * @param {ChatInputCommandInteraction} interaction
    * @param {import("discord.js").Client} client
    */
   async execute(interaction, client) {

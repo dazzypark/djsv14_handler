@@ -1,5 +1,5 @@
 const {
-  CommandInteraction,
+  ChatInputCommandInteraction,
   SlashCommandBuilder,
   ActionRowBuilder,
   ButtonBuilder,
@@ -9,7 +9,7 @@ module.exports = {
   data: new SlashCommandBuilder().setName("버튼").setDescription("버튼 테스트"),
   /**
    *
-   * @param {CommandInteraction} interaction
+   * @param {ChatInputCommandInteraction} interaction
    * @param {import("discord.js").Client} client
    */
   async execute(interaction) {
