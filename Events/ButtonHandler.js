@@ -25,7 +25,7 @@ module.exports = {
     try {
       await button.execute(interaction, client);
     } catch (error) {
-      console.log(`${command.data.name}에서 오류 발생`);
+      console.log(`${button.name}에서 오류 발생`);
       console.log(error);
     }
   },
