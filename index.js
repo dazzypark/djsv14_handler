@@ -10,7 +10,7 @@ const { Client, Partials, GatewayIntentBits } = require("discord.js");
     // 인텐트 수정하세요 (모든 인텐트 : 131071)
     GatewayIntentBits.Guilds,
     GatewayIntentBits.GuildMembers,
-    GatewayIntentBits.GuildBans,
+    GatewayIntentBits.GuildModeration,
     GatewayIntentBits.GuildIntegrations,
     GatewayIntentBits.GuildInvites,
     GatewayIntentBits.GuildVoiceStates,
